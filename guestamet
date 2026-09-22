@@ -1,0 +1,5 @@
+/// @notice Grants the sovereign entity the authority to act in the best interest of the community under specified circumstances.
+function exerciseDiscretionaryPowers(string memory action) external {
+    require(msg.sender == sovereignEntity, "Only the sovereign can execute this action");
+    // Logic for executing the action
+}
